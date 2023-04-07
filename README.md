@@ -3,7 +3,7 @@
 Not: Bu kodu çalıştırmadan önce cihazınızda Python yüklü olmalıdır
 
 ```
-python bellman-ford.py
+python zhu-takaoka.py
 ```
 
 # Zhu-Takaoka
