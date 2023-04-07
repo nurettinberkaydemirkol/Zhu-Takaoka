@@ -1,17 +1,17 @@
 def zhu_takaoka(text, word):
 
-    # Metinin ve kelimenin uzunluğunu hesapla
+    # Metinin ve kelimenin uzunluklarını hesapla
     text_len = len(text)
     word_len = len(word)
 
-    # Zhu-Takaoka Boşluğu ve Sıfırlar Matrisi oluştur
+    # Matris oluştur
     ztbc = [[word_len for j in range(128)] for i in range(128)]
 
-    # Boşluğu ve sıfırları doldur
+    # Matristeki boşlukları ve sıfırları doludr
     for i in range(word_len):
         ztbc[ord(word[i])][i] = word_len - i - 1
 
-    # Metin üzerinde dolaş
+    # Metin üzernide dolaş
     i = 0
 
     # Metindeki kelime sayısını sayacak sayaç
@@ -19,18 +19,18 @@ def zhu_takaoka(text, word):
 
     while i <= text_len - word_len:
 
-        # Kelimenin son karakterinden başlayarak geriye doğru dolaş ve eşleşme kontrolü yap
+        # Kelimenin son karakterinden başlayarak geriye doğru dolaş 
         j = word_len - 1
 
         while j >= 0 and text[i + j] == word[j]:
             j -= 1
 
-        # Eğer tüm karakterler eşleştiyse, kelime sayısını bir arttır
+        # Kelime aynıysa sayacı arttır
         if j < 0:
             ct += 1
             i += 1
 
-        # Eşleşmeyen bir karakter varsa, kaydırma adımını belirle
+        # Karakter eşleşmediyse kaydırma adımını belirle
         else:
             i += max(1, j - ztbc[ord(text[i + j])][ord(word[j])])
 
