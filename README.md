@@ -1,3 +1,4 @@
+# KULLANIM
 
 Not: Bu kodu çalıştırmadan önce cihazınızda Python yüklü olmalıdır
 
