@@ -1,3 +1,10 @@
+
+Not: Bu kodu çalıştırmadan önce cihazınızda Python yüklü olmalıdır
+
+```
+python bellman-ford.py
+```
+
 # Zhu-Takaoka
  Boyer-Moore algoritmasının bir türevidir. Karşılaştırma işlemi sağdan sola doğru gerçekleştirilir. Boyer-Moore algoritmasındaki kötü karakter kaydırmasını hesaplamak için ardıl metin karakterlerini kullanır. İyi sonek önişlem safhası ise Boyer-Moore algoritmasındaki ile aynıdır. Kaydırma işlemini gerçekleştirirken bu iki kural arasındaki maksimum değerini seçerek kaydırma yapar.
  
