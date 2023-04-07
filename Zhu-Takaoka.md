@@ -11,7 +11,7 @@ En iyi durumda, algoritmanın çalışma zamanı, grafın ayrılmış olması du
 
 Ortalama durumda, algoritmanın çalışma zamanı, bir grafa ağırlıkların rastgele atanması durumunda O(ElogE) olacaktır.
 
-##EN KÖTÜ DURUM
+#EN KÖTÜ DURUM
 
 En kötü durumda, algoritmanın çalışma zamanı, grafın tüm düğümleri arasında kenarların ağırlığı eşit olarak dağıldığı durumlarda, yani ağırlıklı tam bir grafsa O(E^2logE) olacaktır.
 
