@@ -3,7 +3,7 @@
 Not: Bu kodu çalıştırmadan önce cihazınızda Python yüklü olmalıdır
 
 ```
-python zhu-takaoka.py
+python Zhu-Takaoka.py
 ```
 
 # Zhu-Takaoka
